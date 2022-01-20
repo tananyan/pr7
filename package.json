@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tananyan/pr5.git"
+    "url": "git+https://github.com/tananyan/pr7.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tananyan/pr5/issues"
+    "url": "https://github.com/tananyan/pr7/issues"
   },
-  "homepage": "https://github.com/tananyan/pr5#readme",
+  "homepage": "https://github.com/tananyan/pr7#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.2",
@@ -25,5 +25,11 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.48.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }

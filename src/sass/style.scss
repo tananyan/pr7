@@ -1,11 +1,15 @@
 @import "base/variables";
+
+// Light 300; Regular 400; Medium 500; Bold 700
 * {
-  font-family: "MuseoModerno", cursive;
+  font-family: "MuseoModerno", sans-serif; //, cursive;
 }
+
 .container {
   max-width: 950px;
   margin: 0 auto;
 }
+
 @import "blocks/promo";
 @import "blocks/header.scss";
 @import "blocks/buttons";

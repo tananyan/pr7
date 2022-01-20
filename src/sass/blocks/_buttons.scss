@@ -1,0 +1,23 @@
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background: $main-color;
+
+  border: none;
+
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &_main {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+
+    margin-top: 65px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,7 +1,7 @@
 .promo {
   min-height: 650px;
   padding: 21px 0 93px;
-  background: url(../img/main.jpg); //center (center/cover) no-repeat;
+  background-image: url(../img/main.jpg); //center (center/cover) no-repeat;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,6 +31,7 @@
     font-size: 14px;
     color: $white-color;
     margin-top: 55px;
+    margin-bottom: 65px;
     width: 424px;
     display: flex;
     justify-content: space-between;

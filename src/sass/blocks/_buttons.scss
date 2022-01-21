@@ -1,7 +1,7 @@
 .button {
   width: 150px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   background: $main-color;
 
   border: none;
@@ -10,14 +10,21 @@
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-color;
 
   &_main {
     width: 300px;
     height: 50px;
     font-size: 16px;
 
-    margin-top: 65px;
     margin-bottom: 10px;
+  }
+
+  &_form {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: $white-color;
+    margin-top: 18px;
   }
 }

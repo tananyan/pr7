@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- My CSS  -->
   <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -104,13 +107,32 @@
         и мы перезвоним вам в течении 10 минут
       </div>
       <form action="#" class="feed-form">
-        <input type="text"    name="name"   placeholder="Имя"     required>
-        <input type="number"  name="phone"  placeholder="Телефон" required> 
-        <input type="email"   name="email"  placeholder="E-mail"  required>
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="number" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="E-mail" required>
         <button class="button button_form">Заказать Консультацию</button>
       </form>
     </div>
   </section>
+
+  <section class="carousel">
+    <div class="container">
+      <div class="carousel__inner">
+        <div><img src="img/slide_1.jpg" alt="slide_1"></div>
+        <div><img src="img/slide_2.jpg" alt="slide_2"></div>
+        <div><img src="img/slide_3.jpg" alt="slide_3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

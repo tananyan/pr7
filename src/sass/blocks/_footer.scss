@@ -1,0 +1,62 @@
+.footer {
+  position: relative;
+  height: 500px;
+  &__info {
+    position: absolute;
+    height: 200px;
+    width: 460px;
+    background-color: $main-color;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &-address {
+      font-size: 20px;
+      font-weight: 500;
+      color: $white-color;
+      margin-bottom: 0;
+      cursor: default;
+    }
+    &-links {
+      width: 212px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 2px solid $white-color;
+      border-radius: 100%;
+      transition: 0.5s all;
+      &:hover {
+        transform: scale(110%, 110%);
+        transform: translateY(-15px);
+        box-shadow: 0px 5px 20px 5px $white-color;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &-tele {
+      font-size: 20px;
+      font-weight: 700;
+      color: $white-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline dotted;
+        color: $white-color;
+      }
+    }
+  }
+}

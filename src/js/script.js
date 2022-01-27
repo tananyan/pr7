@@ -35,4 +35,21 @@ $(document).ready(function () {
         .addClass("catalog__content_active");
     }
   );
+
+  function toggleSlide(link) {
+    $(link).each(function (i) {
+      $(this).on("click", function (e) {
+        e.preventDefault(); //отмена активации ссылки
+        $(".catalog-item__content")
+          .eq(i)
+          .toggleClass("catalog-item__content_active");
+        $(".catalog-item__ulist")
+          .eq(i)
+          .toggleClass("catalog-item__ulist_active");
+      });
+    });
+  }
+
+  toggleSlide(".catalog-item__link");
+  toggleSlide(".catalog-item__back");
 });

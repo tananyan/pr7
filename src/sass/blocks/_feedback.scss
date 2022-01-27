@@ -1,0 +1,37 @@
+.feedback {
+  min-height: 800px;
+  padding-bottom: 26px;
+  &__wrapper {
+    margin-top: 60px;
+  }
+  &-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__img {
+      width: 170px;
+      height: 170px;
+    }
+    &__article {
+      width: 700px;
+      margin-bottom: 60px;
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 18px;
+      color: $font-color;
+    }
+    &__advantages {
+      font-weight: 500;
+      color: #646464;
+      font-size: 14px;
+    }
+    &__descr {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      color: $font-color;
+      margin-top: 10px;
+    }
+  }
+}

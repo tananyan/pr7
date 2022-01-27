@@ -16,7 +16,7 @@
     border: 1px solid #d0d0d0;
     border-radius: 5px;
     box-sizing: border-box;
-    transform: skewX(-25deg);
+    transform: skewX(-30deg);
     margin: 0 7px;
     font-weight: 400;
     font-size: 18px;
@@ -31,7 +31,7 @@
       border-color: $main-color;
     }
     div {
-      transform: skewX(25deg);
+      transform: skewX(30deg);
     }
     &_active {
       border-color: $main-color;
@@ -47,7 +47,6 @@
   &__content {
     margin-top: 57px;
     display: none;
-    justify-content: space-between;
     flex-wrap: wrap;
     &_active {
       display: flex;
@@ -60,8 +59,9 @@
     min-height: 450px;
     border: 2px solid #e8e8e8;
     background: $white-color;
-    // overflow: hidden;
-/////////////////////////////////////////////////////////////////
+    overflow: hidden;
+    margin: 0 calc((950px - 3 * 300px) / 6);
+    margin-bottom: 18px;
     &__wrap {
       display: flex;
       width: calc(200% + 50px);
@@ -83,7 +83,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 50%;
-      padding-right: 20px;
+      padding-right: 25px;
       margin-left: 25px;
       transform: translateX(0);
       transition: 1.1s all;

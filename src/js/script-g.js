@@ -52,4 +52,33 @@ $(document).ready(function () {
   ///
   toggleSlide(".catalog-item__link");
   toggleSlide(".catalog-item__back");
+  ///
+
+  // modal
+  // open
+  $("[data-modal=consultation]").on("click", function () {
+    $(".overlay, #consultation").fadeIn("fast");
+  });
+  // close
+  $(".modal__close").on("click", function () {
+    $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
+  });
+  $(window).on("click", function (e) {
+    if (e.target.classList.contains("overlay")) {
+      $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
+    }
+  });
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27) {
+      // esc
+      $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
+    }
+  });
+
+  $(".button_mini").each(function (i) {
+    $(this).on("click", function () {
+      $("#ord .modal__descr").text($(".catalog-item__subtitle").eq(i).text());
+      $(".overlay, #ord").fadeIn("fast");
+    });
+  });
 });

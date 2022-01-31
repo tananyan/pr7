@@ -31,7 +31,7 @@
         </div>
         <div class="header__contact">
           <a href="tel:+74999009090" class="header__telephone">+7 (499) 900-90-90</a>
-          <button class="button">Заказать Звонок</button>
+          <button data-modal="consultation" class="button">Заказать Звонок</button>
         </div>
       </header>
 
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <button class="button button_main">Заказать Консультацию</button>
+        <button data-modal="consultation" class="button button_main">Заказать Консультацию</button>
         <div class="promo__link">
           или
           <a href="#catalog-id">Перейти в каталог</a>
@@ -540,6 +540,39 @@
       </div>
     </div>
   </footer>
+
+  <!-- Forms -->
+  <div class="overlay">
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">Просто заполните заявку</div>
+      <div class="modal__descr">и мы перезвоним вам в течении 15 минут</div>
+      <form action="#" class="feed-form feed-form_mt25">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="number" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <button class="button button_form">Заказать Консультацию</button>
+      </form>
+    </div>
+
+    <div class="modal" id="ord">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">Ваш заказ:</div>
+      <div class="modal__descr">Пульсометр</div>
+      <form action="#" class="feed-form feed-form_mt25">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="number" name="phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <button class="button button_form">Заказать Консультацию</button>
+      </form>
+    </div>
+
+    <div class="modal modal_mini" id="thanks">
+      <div class="modal__close">&times;</div>
+      <div class="modal__title">Спасибо за заявку!</div>
+      <div class="modal__descr modal__descr_lh22">Наш менеджер скоро свяжется с вами в ближайшее время!</div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

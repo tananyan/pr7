@@ -20,3 +20,23 @@
     margin-top: 25px;
   }
 }
+
+//992px-1200px
+@media (max-width: 1200px) {
+}
+
+//768px-991px
+@media (max-width: 991px) {
+}
+
+//576px-767px
+@media (max-width: 767px) {
+  .feed-form {
+    margin: 0 auto;
+    margin-top: 38px;
+  }
+}
+
+//320px-575px
+@media (max-width: 575px) {
+}

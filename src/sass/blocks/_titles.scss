@@ -11,7 +11,35 @@
     color: $white-color;
     text-align: left;
   }
-  &_catalog{
+  &_catalog {
     font-weight: 400;
   }
+}
+
+//992px-1200px
+@media (max-width: 1200px) {
+}
+
+//768px-991px
+@media (max-width: 991px) {
+}
+
+//576px-767px
+@media (max-width: 767px) {
+  .title {
+    font-size: 28px;
+    line-height: 28px;
+    &_left {
+      font-size: 32px;
+      line-height: 35px;
+      text-align: center;
+    }
+    // &_catalog {
+    //   font-weight: 400;
+    // }
+  }
+}
+
+//320px-575px
+@media (max-width: 575px) {
 }

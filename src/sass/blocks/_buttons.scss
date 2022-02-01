@@ -34,5 +34,43 @@
     font-size: 14px;
     line-height: 40px;
   }
-  
+}
+
+//992px-1200px
+@media (max-width: 1200px) {
+  .button {
+    &_mini {
+      width: 57%;
+    }
+  }
+}
+
+//768px-991px
+@media (max-width: 991px) {
+  .button {
+    &_mini {
+      width: 57%;
+    }
+  }
+}
+
+//576px-767px
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+    font-size: 18px;
+    &_main {
+      width: 300px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &_mini {
+      width: 57%;
+    }
+  }
+}
+
+//320px-575px
+@media (max-width: 575px) {
 }

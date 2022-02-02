@@ -66,11 +66,27 @@
       line-height: 18px;
     }
     &_mini {
-      width: 57%;
+      width: 53%;
     }
   }
 }
 
 //320px-575px
 @media (max-width: 575px) {
+  .button {
+    height: 32px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 20px;
+    &_main {
+      width: 87%;
+    }
+    &_form {
+      height: 50px;
+    }
+    &_mini {
+      width: 53%;
+      line-height: 32px;
+    }
+  }
 }

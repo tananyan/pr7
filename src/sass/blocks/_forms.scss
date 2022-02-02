@@ -34,9 +34,15 @@
   .feed-form {
     margin: 0 auto;
     margin-top: 38px;
+    margin-bottom: 30px;
   }
 }
 
 //320px-575px
 @media (max-width: 575px) {
+  .feed-form {
+    width: 90%;
+    margin-top: 25px;
+
+  }
 }

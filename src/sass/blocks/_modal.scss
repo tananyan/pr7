@@ -51,6 +51,16 @@
   }
 }
 
-#consultation, #thanks, #ord {
+#consultation,
+#thanks,
+#ord {
   display: none;
+}
+
+@media (max-width: 575px) {
+  .modal {
+    padding: 25px 5px 30px 5px;
+    width: 257px;
+    min-height: 370px;
+  }
 }

@@ -1,5 +1,8 @@
 //992px-1200px
 @media (max-width: 1200px) {
+  .promo {
+    background-position-x: 25%;
+  }
   .catalog {
     &-item {
       &__price-old {
@@ -20,6 +23,7 @@
   .promo {
     padding-left: 35px;
     padding-right: 35px;
+    background-position-x: 15%;
   }
   .consult {
     padding-left: 35px;
@@ -35,6 +39,17 @@
     &__content {
       justify-content: space-around;
     }
+    &__tab {
+      &:hover {
+        box-shadow: none;
+        border-color: #6b6b6b;
+      }
+      &_active {
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
   }
   .feedback {
     padding-left: 35px;
@@ -46,6 +61,19 @@
       }
       &__article {
         width: 530px;
+      }
+    }
+  }
+  .footer {
+    &-link {
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+      &-tele {
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -83,6 +111,7 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+    background-position-x: 15%;
     &__wrapper {
       align-items: center;
     }
@@ -190,7 +219,215 @@
       }
     }
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    &__info {
+      position: relative;
+      width: 100%;
+      min-height: 150px;
+      &-link {
+        &:hover {
+          transform: none;
+          box-shadow: none;
+        }
+        &-tele {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
+
 //320px-575px
-// @media (max-width: 575px) {
-// }
+@media (max-width: 575px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .header {
+    &__logo {
+      width: 38%;
+    }
+    &__official {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-top: 5px;
+    }
+    &__telephone {
+      font-size: 16px;
+    }
+  }
+
+  .promo {
+    background-position-x: 15%;
+    min-height: 500px;
+    padding-bottom: 25px;
+    &__wrapper {
+      text-align: center;
+    }
+    &__header {
+      font-size: 26px;
+    }
+    &__icons {
+      margin-bottom: 25px;
+      align-items: flex-start;
+    }
+    &__icon {
+      width: 33%;
+      font-size: 12px;
+      img {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    &__link {
+      font-size: 16px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .consult {
+    min-height: 517px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__description {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .advantages {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__wrapper {
+      margin-top: 25px;
+    }
+    &__item {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    &__subtitle {
+      margin-top: 5px;
+    }
+    &__description {
+      font-size: 16px;
+      margin-top: 7px;
+    }
+  }
+
+  .carousel {
+    min-height: 257px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    &__inner {
+      width: 100%;
+      img {
+        max-height: 175px;
+        // max-width: 100%;
+        margin: 0px auto;
+      }
+    }
+  }
+
+  .catalog {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 30px;
+    &__tabs {
+      margin-top: 20px;
+    }
+    &__tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 28px;
+      font-size: 12px;
+      line-height: 12px;
+      padding: 0 15px;
+    }
+    &__content {
+      margin-top: 20px;
+    }
+    &-item {
+      hr {
+        width: 237px;
+      }
+      &__footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .feedback {
+    min-height: 700px;
+    padding-left: 5px;
+    padding-right: 5px;
+    &__wrapper {
+      margin-top: 25px;
+    }
+    &-element {
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        width: 117px;
+        height: 117px;
+      }
+      &__article {
+        width: 97%;
+        margin-bottom: 30px;
+      }
+      &__name {
+        text-align: center;
+      }
+      &__advantages {
+        text-align: center;
+      }
+      &__descr {
+        text-align: justify;
+      }
+    }
+  }
+
+  .footer {
+    &__info {
+      width: 100%;
+      min-height: 128px;
+      &-address {
+        font-size: 16px;
+      }
+      &-links {
+        height: 35px;
+      }
+      &-link {
+        width: 35px;
+        height: 35px;
+        &:hover {
+          transform: none;
+          box-shadow: none;
+        }
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &-tele {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

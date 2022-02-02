@@ -19,5 +19,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # хрень
-src/sass/blocks/_test.scss
-src/neindex.html
+src/js/jquery.maskedinput.min.js

@@ -63,11 +63,11 @@ $(document).ready(function () {
   $(".modal__close").on("click", function () {
     $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
   });
-  $(window).on("click", function (e) {
-    if (e.target.classList.contains("overlay")) {
-      $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
-    }
-  });
+  // $(window).on("click", function (e) {
+  //   if (e.target.classList.contains("overlay")) {
+  //     $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
+  //   }
+  // });
   $(document).keyup(function (e) {
     if (e.keyCode === 27) {
       // esc
@@ -75,10 +75,53 @@ $(document).ready(function () {
     }
   });
 
+  // button-buy
   $(".button_mini").each(function (i) {
     $(this).on("click", function () {
       $("#ord .modal__descr").text($(".catalog-item__subtitle").eq(i).text());
       $(".overlay, #ord").fadeIn("fast");
     });
   });
+
+  // valid
+  function formValidation(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 15,
+        },
+        phone: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите ваше имя",
+          minlength: jQuery.validator.format("Минимальная длина {0} букв"),
+          maxlength: jQuery.validator.format("Максимальная длина {0} букв"),
+        },
+        phone: {
+          required: "Пожалуйста, введите свой номер",
+        },
+        email: {
+          required: "Пожалуйста, введите e-mail",
+          email: "Пример почты name@pochta.ru",
+        },
+      },
+    });
+  }
+
+  formValidation("#consultation-form");
+  formValidation("#consultation form");
+  formValidation("#ord form");
+
+  // maska
+  $("input[name=phone]").inputmask("+7 (999) 999 - 99 - 99");
+  // $("input[name=phone]").mask("+7 (999) 999-99-99");
 });

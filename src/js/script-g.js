@@ -81,4 +81,45 @@ $(document).ready(function () {
       $(".overlay, #ord").fadeIn("fast");
     });
   });
+
+  // valid
+  function formValidation(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 15,
+        },
+        phone: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите ваше имя",
+          minlength: jQuery.validator.format("Минимальная длина {0} букв"),
+          maxlength: jQuery.validator.format("Максимальная длина {0} букв"),
+        },
+        phone: {
+          required: "Пожалуйста, введите свой номер",
+        },
+        email: {
+          required: "Пожалуйста, введите e-mail",
+          email: "Пример почты name@pochta.ru",
+        },
+      },
+    });
+  }
+
+  formValidation("#consultation-form");
+  formValidation("#consultation form");
+  formValidation("#ord form");
+
+  // maska
+  $("input[name=phone]").inputmask("+7 (999) 999 - 99 - 99");
 });

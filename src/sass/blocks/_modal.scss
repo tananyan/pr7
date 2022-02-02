@@ -49,6 +49,19 @@
   &_mini {
     min-height: 145px;
   }
+  // validation
+  .error {
+    border: 1px solid red;
+    box-shadow: none;
+  }
+  label.error {
+    color: red;
+    border: none;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: none;
+  }
 }
 
 #consultation,

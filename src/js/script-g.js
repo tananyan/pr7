@@ -68,12 +68,12 @@ $(document).ready(function () {
   //     $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
   //   }
   // });
-  // $(document).keyup(function (e) {
-  //   if (e.keyCode === 27) {
-  //     // esc
-  //     $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
-  //   }
-  // });
+  $(document).keyup(function (e) {
+    if (e.keyCode === 27) {
+      // esc
+      $(".overlay, #consultation, #ord, #thanks").fadeOut("fast");
+    }
+  });
 
   $(".button_mini").each(function (i) {
     $(this).on("click", function () {
@@ -123,20 +123,19 @@ $(document).ready(function () {
   // maska
   $("input[name=phone]").inputmask("+7 (999) 999 - 99 - 99");
 
-
   $("form").submit(function (e) {
     e.preventDefault();
-
     if (!$(this).valid()) {
       return;
     }
-
     $.ajax({
       type: "POST",
       url: "src/mailer/smart.php",
       data: $(this).serialize(),
     }).done(function () {
       $(this).find("input").val("");
+      $("#consultation, #ord").fadeOut();
+      $(".overlay, #thanks").fadeIn("fast");
 
       $("form").trigger("reset");
     });

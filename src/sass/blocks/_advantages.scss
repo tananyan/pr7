@@ -36,4 +36,13 @@
       color: #f00;
     }
   }
+
+  &__icon {
+    &_animation {
+      animation-name: heart 1.15s infinite cubic-bezier(0.9, 0, 0, 0.9);
+      &:hover {
+        animation-play-state: paused, running, running;
+      }
+    }
+  }
 }

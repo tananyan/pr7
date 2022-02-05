@@ -15,11 +15,12 @@
   <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- MyCSS -->
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-  <section class="promo">
+  <section class="promo" id="up">
     <div class="container">
       <header class="header">
         <a href="#" class="header__logo">
@@ -77,7 +78,7 @@
           </div>
         </div>
         <div class="advantages__item">
-          <img src="./icons/advantages/heart.png" alt="2" class="advatages__icon">
+          <img src="./icons/advantages/heart.png" alt="2" class="advatages__icon advantages__icon_animation">
           <div class="advantages__subtitle">Заботимся о здоровье</div>
           <div class="advantages__description">
             Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим
@@ -477,7 +478,8 @@
     <div class="container">
       <h2 class="title">Отзывы клиентов</h2>
       <div class="feedback__wrapper">
-        <div class="feedback-element">
+        <div class="feedback-element wow animate__animated animate__fadeInTopRight" data-wow-duration="3s"
+          data-wow-delay="1s">
           <img src="img/feed_1.png" alt="fbc" class="feedback-element__img">
           <div class="feedback-element__article">
             <div class="feedback-element__name">Ирина Иванченко</div>
@@ -489,7 +491,8 @@
             </div>
           </div>
         </div>
-        <div class="feedback-element">
+        <div class="feedback-element wow animate__animated animate__fadeInTopLeft " data-wow-duration="3s"
+          data-wow-delay="1s">
           <img src="img/feed_2.png" alt="fbc" class="feedback-element__img">
           <div class="feedback-element__article">
             <div class="feedback-element__name">Иван Сёмочкин</div>
@@ -501,7 +504,8 @@
             </div>
           </div>
         </div>
-        <div class="feedback-element">
+        <div class="feedback-element wow animate__animated animate__fadeInTopRight" data-wow-duration="3s"
+          data-wow-delay="1s">
           <img src="img/feed_3.png" alt="fbc" class="feedback-element__img">
           <div class="feedback-element__article">
             <div class="feedback-element__name">Юлия Дашкина</div>
@@ -519,7 +523,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="down">
     <div class="footer__plan">
       <iframe style="pointer-events: auto"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Afed1d329f7ae328bdd4d3843cecb38f3928b36847e7103c21360b4804492a797&amp;source=constructor"
@@ -574,15 +578,27 @@
     </div>
   </div>
 
+  <!-- arrow -->
+  <a href="#up" class="scroll-up">
+    <img src="icons/arrow-up-solid.svg" alt="up">
+  </a>
+  <a href="#down" class="scroll-down">
+    <img src="icons/arrow-down-solid.svg" alt="down">
+  </a>
+
   <!-- Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
   <!-- MyScripts -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

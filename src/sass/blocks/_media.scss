@@ -375,6 +375,7 @@
     min-height: 700px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 30px;
     &__wrapper {
       margin-top: 25px;
     }
@@ -403,8 +404,10 @@
 
   .footer {
     &__info {
+      // display: block;
       width: 100%;
       min-height: 128px;
+      margin-top: 70px;
       &-address {
         font-size: 16px;
       }

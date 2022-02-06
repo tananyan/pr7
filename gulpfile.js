@@ -51,7 +51,7 @@ gulp.task("scripts", function () {
 });
 
 gulp.task("fonts", function () {
-  return gulp.src("src/fonts/*").pipe(gulp.dest("dist/fonts"));
+  return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
 });
 
 gulp.task("icons", function () {
@@ -59,14 +59,14 @@ gulp.task("icons", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("src/img/*")
+  return gulp.src("src/img/**/*")
   // .pipe(imagemin())
   // .pipe(image())
   .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("mailer", function () {
-  return gulp.src("src/mailer/*").pipe(gulp.dest("dist/mailer"));
+  return gulp.src("src/mailer/**/*").pipe(gulp.dest("dist/mailer"));
 });
 
 gulp.task(

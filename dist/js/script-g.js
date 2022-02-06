@@ -6,9 +6,9 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
 
     prevArrow:
-      '<button type="button" class="slick-prev"><img src="dist/icons/left.svg" alt="left"></button>',
+      '<button type="button" class="slick-prev"><img src="src/icons/left.svg" alt="left"></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><img src="dist/icons/right.svg" alt="rightt"></button>',
+      '<button type="button" class="slick-next"><img src="src/icons/right.svg" alt="rightt"></button>',
     responsive: [
       {
         breakpoint: 992,
@@ -130,7 +130,7 @@ $(document).ready(function () {
     }
     $.ajax({
       type: "POST",
-      url: "dist/mailer/smart.php",
+      url: "src/mailer/smart.php",
       data: $(this).serialize(),
     }).done(function () {
       $(this).find("input").val("");

@@ -4,9 +4,6 @@ const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
-// import imagemin from "gulp-imagemin";
-// const imagemin = require("gulp-imagemin");
-// import image from "gulp-image";
 const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
 
@@ -62,7 +59,6 @@ gulp.task("images", function () {
   return (
     gulp
       .src("src/img/**/*")
-      // .pipe(imagemin())
       .pipe(image())
       .pipe(gulp.dest("dist/img"))
   );

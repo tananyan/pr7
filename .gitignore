@@ -20,5 +20,5 @@ yarn-error.log*
 
 # хрень
 src/js/jquery.maskedinput.min.js
-src/mailer
-dist/mailer
+# src/mailer
+# dist/mailer

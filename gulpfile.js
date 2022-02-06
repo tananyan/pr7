@@ -6,8 +6,8 @@ const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 // import imagemin from "gulp-imagemin";
 // const imagemin = require("gulp-imagemin");
-// import image from 'gulp-image';
-// const image = require("gulp-image");
+// import image from "gulp-image";
+const image = require("gulp-image");
 const htmlmin = require("gulp-htmlmin");
 
 gulp.task("server", function () {
@@ -59,10 +59,13 @@ gulp.task("icons", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("src/img/**/*")
-  // .pipe(imagemin())
-  // .pipe(image())
-  .pipe(gulp.dest("dist/img"));
+  return (
+    gulp
+      .src("src/img/**/*")
+      // .pipe(imagemin())
+      .pipe(image())
+      .pipe(gulp.dest("dist/img"))
+  );
 });
 
 gulp.task("mailer", function () {

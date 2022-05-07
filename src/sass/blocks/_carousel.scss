@@ -15,7 +15,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -67px;
+    // right: -67px;
     border: none;
     background-color: $white-color;
     img {
@@ -25,6 +25,9 @@
   }
   .slick-prev {
     left: -67px;
+  }
+  .slick-next {
+    right: -67px;
   }
   .slick-dots {
     display: flex;
